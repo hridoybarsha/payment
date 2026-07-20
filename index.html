@@ -1,0 +1,92 @@
+<?php
+include "../includes/header.php";
+include "../includes/sidebar.php";
+include "../includes/navbar.php";
+
+/* Demo data (later DB থেকে আসবে) */
+$total_users = 120;
+$total_playlists = 35;
+$active_subs = 85;
+$expired_subs = 10;
+$total_revenue = 25000;
+?>
+
+<!-- Dashboard Content -->
+<div class="container-fluid p-4">
+
+    <!-- Cards Row -->
+    <div class="row g-3">
+
+        <div class="col-md-3">
+            <div class="card text-white bg-primary shadow">
+                <div class="card-body">
+                    <h5>Total Users</h5>
+                    <h2><?= $total_users ?></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-white bg-success shadow">
+                <div class="card-body">
+                    <h5>Playlists</h5>
+                    <h2><?= $total_playlists ?></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-white bg-warning shadow">
+                <div class="card-body">
+                    <h5>Active Subs</h5>
+                    <h2><?= $active_subs ?></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-white bg-danger shadow">
+                <div class="card-body">
+                    <h5>Expired Subs</h5>
+                    <h2><?= $expired_subs ?></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Revenue + Activity -->
+    <div class="row mt-4 g-3">
+
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header">
+                    💰 Revenue
+                </div>
+                <div class="card-body">
+                    <h3>₹ <?= $total_revenue ?></h3>
+                    <p>This month earnings</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header">
+                    📋 Recent Activity
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>New user registered</li>
+                        <li>Playlist added</li>
+                        <li>Subscription renewed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<?php include "../includes/footer.php"; ?>
