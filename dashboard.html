@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SUPER IPTV Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+<h2>📺 SUPER IPTV PANEL</h2>
+</header>
+
+<section class="cards">
+
+<div class="card">
+<h3>Total Users</h3>
+<h1 id="users">0</h1>
+</div>
+
+<div class="card">
+<h3>Active Users</h3>
+<h1 id="active">0</h1>
+</div>
+
+<div class="card">
+<h3>Expired Users</h3>
+<h1 id="expired">0</h1>
+</div>
+
+<div class="card">
+<h3>Total Revenue</h3>
+<h1 id="revenue">₹0</h1>
+</div>
+
+</section>
+
+<section class="menu">
+
+<a href="users.html">
+<i class="fa-solid fa-users"></i><br><br>
+Users
+</a>
+
+<a href="payments.html">
+<i class="fa-solid fa-money-bill-wave"></i><br><br>
+Payments
+</a>
+
+<a href="plans.html">
+<i class="fa-solid fa-box"></i><br><br>
+Plans
+</a>
+
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i><br><br>
+Settings
+</a>
+
+<a href="profile.html">
+<i class="fa-solid fa-user"></i><br><br>
+Profile
+</a>
+
+<a href="#" onclick="copyUPI()">
+<i class="fa-solid fa-copy"></i><br><br>
+Copy UPI
+</a>
+
+<a href="#" onclick="shareWhatsApp()">
+<i class="fa-brands fa-whatsapp"></i><br><br>
+Share WhatsApp
+</a>
+
+<a href="https://wa.me/91YOURNUMBER?text=Hello%20I%20want%20IPTV%20Subscription" target="_blank">
+<i class="fa-brands fa-whatsapp"></i><br><br>
+Chat WhatsApp
+</a>
+
+</section>
+
+<section style="padding:20px;">
+
+<div class="card">
+
+<h3>Subscription Status</h3>
+
+<p><strong>Plan:</strong> Premium</p>
+
+<p><strong>Expiry:</strong> 30-Aug-2026</p>
+
+<p><strong>Status:</strong>
+<span style="color:#00ff99;">Active</span>
+</p>
+
+<br>
+
+<button onclick="shareWhatsApp()">
+Share Details
+</button>
+
+<button onclick="copyUPI()">
+Copy UPI ID
+</button>
+
+</div>
+
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
